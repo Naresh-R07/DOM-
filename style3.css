@@ -1,0 +1,57 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #0e0e0e;
+    color: #00ffcc;
+
+}
+h1 {
+    text-align: center;
+    color: #00ffcc;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #1a1a1a;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+button {
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: #00cc66;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #00994d;
+}
+input {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #00ffcc;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: #00ffcc;
+}
+input:focus {
+    border-color: #00cc66;
+    outline: none;
+}
+p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #00cc66;
+}
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    color: #00ffcc;
+}
