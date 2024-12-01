@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Dogs Game Example</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="content">
+        <h1 id="title">Watch Dogs</h1>
+        <p class="description">Watch Dogs is an action-adventure game set in a fictionalized version of Chicago, where players control Aiden Pearce, a hacker seeking revenge for a family tragedy.</p>
+        <p class="description">In this game, players can hack various electronic devices, manipulate the environment, and engage in a variety of missions that challenge their skills and ethics.</p>
+        <p class="description">The game features an open-world environment, allowing players to explore the city, interact with NPCs, and uncover a deep narrative filled with twists and turns.</p>
+        <p class="description">Join Aiden in his quest for vengeance and discover the power of hacking in a world where everything is connected.</p>
+        <button onclick="changeContent()">Change Content</button>
+    </div>
+    <script>
+        let isOriginalContent = true;
+        function changeContent() {
+            const titleElement = document.getElementById('title');
+            const paragraphElements = document.querySelectorAll('.description');
+            const bodyElement = document.body;
+            if (isOriginalContent) {
+                titleElement.textContent = 'Watch Dogs 2!';
+                paragraphElements[0].textContent = 'Watch Dogs 2 is set in the San Francisco Bay Area and follows a new hacker named Marcus Holloway. Players can explore an open world and engage in various missions, focusing on themes of surveillance and privacy.';
+                paragraphElements[1].textContent = 'Experience a vibrant city filled with diverse characters, exciting side missions, and a rich storyline that challenges your morals.';
+                paragraphElements[2].textContent = 'Utilize new hacking abilities, including controlling drones and manipulating the city’s infrastructure to your advantage.';
+                paragraphElements[3].textContent = 'Join Marcus and DedSec as they fight against corruption and fight for the freedom of the people.';
+                bodyElement.style.backgroundImage = 'url("https://interfaceingame.com/wp-content/uploads/watch-dogs-2/watch-dogs-2-logo-1920x1080.jpg")'; // Background for Watch Dogs 2
+            } else {
+                titleElement.textContent = 'Watch Dogs';
+                paragraphElements[0].textContent = 'Watch Dogs is an action-adventure game set in a fictionalized version of Chicago, where players control Aiden Pearce, a hacker seeking revenge for a family tragedy.';
+                paragraphElements[1].textContent = 'In this game, players can hack various electronic devices, manipulate the environment, and engage in a variety of missions that challenge their skills and ethics.';
+                paragraphElements[2].textContent = 'The game features an open-world environment, allowing players to explore the city, interact with NPCs, and uncover a deep narrative filled with twists and turns.';
+                paragraphElements[3].textContent = 'Join Aiden in his quest for vengeance and discover the power of hacking in a world where everything is connected.';
+                bodyElement.style.backgroundImage = 'url("https://cdnb.artstation.com/p/assets/images/images/007/924/143/large/craig-nacroix-nexus-7.jpg?1509384934")'; // Background for Watch Dogs
+            }
+            isOriginalContent = !isOriginalContent;
+            console.log('Content has been changed.');
+        }
+    </script>
+</body>
+</html>
