@@ -1,0 +1,40 @@
+body {
+    background-image: url('https://cdnb.artstation.com/p/assets/images/images/007/924/143/large/craig-nacroix-nexus-7.jpg?1509384934');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+}
+.content {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    margin-top: 100px;
+}
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.description {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #c0392b;
+}
