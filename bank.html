@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Bank Account</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="form-container" id="login-form">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label for="loginEmail">Email:</label>
+      <input type="email" id="loginEmail" name="email" required>
+      <label for="loginPassword">Password:</label>
+      <input type="password" id="loginPassword" name="password" required>
+      <button type="submit">Login</button>
+      <p>Don't have an account? <a href="#" onclick="showRegisterForm()">Register here</a></p>
+    </form>
+  </div>
+  <div class="form-container" id="register-form" style="display: none;">
+    <h2>Register</h2>
+    <form id="registerForm">
+      <label for="registerName">Full Name:</label>
+      <input type="text" id="registerName" name="name" required>
+      <label for="registerEmail">Email:</label>
+      <input type="email" id="registerEmail" name="email" required>
+      <label for="registerPassword">Password:</label>
+      <input type="password" id="registerPassword" name="password" required>
+      <label for="registerConfirmPassword">Confirm Password:</label>
+      <input type="password" id="registerConfirmPassword" name="confirmPassword" required>
+      <button type="submit">Register</button>
+      <p>Already have an account? <a href="#" onclick="showLoginForm()">Login here</a></p>
+    </form>
+  </div>
+  <div class="dashboard-container" id="dashboard" style="display: none;">
+    <h2>Welcome to Your Dashboard</h2>
+    <button onclick="toggleDropdown()">Account Settings</button>
+    <div id="dropdown" class="dropdown-content">
+      <a href="#">Update Info</a>
+      <a href="#">Change Password</a>
+      <a href="#">Log out</a>
+    </div>
+    <p>Balance: $5000</p>
+    <button onclick="logout()">Log out</button>
+  </div>
+</body>
+</html>

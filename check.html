@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+      }
+      .container {
+        text-align: center;
+      }
+      #result {
+        border: 2px solid #007BFF;
+        background-color: #ffffff;
+        padding: 20px;
+        font-size: 24px;
+        width: 300px;
+        margin-top: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      input {
+        padding: 10px;
+        font-size: 18px;
+        margin-right: 10px;
+      }
+      button {
+        padding: 10px 15px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <input type="number" id="num" placeholder="Enter a number">
+      <button onclick="checkOddEven()">Check</button>
+      <div id="result"></div>
+    </div>
+    <script>
+      function isEven(num) {
+        return num % 2 == 0;
+      }
+      function checkOddEven() {
+        var num = document.getElementById("num").value;
+        if (isEven(num)) {
+          document.getElementById("result").innerHTML = num + " is even";
+        } else {
+          document.getElementById("result").innerHTML = num + " is odd";
+        }
+      }
+    </script>
+  </body>
+</html>
